@@ -23,13 +23,13 @@ const workerConfig: WorkerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'msbfyi_site_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'MSB.fyi',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://msb.fyi.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -116,7 +116,7 @@ const workerConfig: WorkerConfig = {
 const maintenances: MaintenanceConfig[] = [
   {
     // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['foo_monitor', 'bar_monitor'],
+    monitors: ['msbfyi_site_monitor', 'bar_monitor'],
     // [Optional] default to "Scheduled Maintenance" if not specified
     title: 'Test Maintenance',
     // Description of the maintenance, will be shown at status page
