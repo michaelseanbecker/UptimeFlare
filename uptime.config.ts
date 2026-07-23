@@ -13,7 +13,6 @@ const pageConfig: PageConfig = {
     { link: 'https://ghent.net', label: 'Ghent.Net' },
     { link: 'https://msb.fyi', label: 'MSB.fyi' },
     { link: 'https://michaelseanbecker.com', label: 'michaelseanbecker.com' },
-    { link: 'mailto:m@msb.fyi', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -116,18 +115,18 @@ const workerConfig: WorkerConfig = {
 const maintenances: MaintenanceConfig[] = [
   {
     // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['msbfyi_site_monitor', 'bar_monitor'],
+    monitors: ['msbfyi_site_monitor'],
     // [Optional] default to "Scheduled Maintenance" if not specified
-    title: 'Test Maintenance',
+    // title: 'Test Maintenance',
     // Description of the maintenance, will be shown at status page
-    body: 'This is a test maintenance, server software upgrade',
+    // body: 'This is a test maintenance, server software upgrade',
     // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
-    start: '2020-01-01T00:00:00+08:00',
+    // start: '2020-01-01T00:00:00+08:00',
     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
     // if not specified, the maintenance will be considered as on-going
-    end: '2050-01-01T00:00:00+08:00',
+    // end: '2050-01-01T00:00:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
-    color: 'blue',
+    // color: 'blue',
   },
 ]
 
